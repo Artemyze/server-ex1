@@ -1,4 +1,5 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
+
 const userActionSchema = new mongoose.Schema({
   date: String,
   serverId: String,
@@ -11,6 +12,11 @@ userActionSchema.index({
   date: -1,
 });
 
+// Создаем модель на основе схемы
+const UserAction = mongoose.model("UserAction", userActionSchema);
+
+// Экспортируем и схему, и модель
 module.exports = {
   userActionSchema,
+  UserAction,
 };

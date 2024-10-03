@@ -1,0 +1,26 @@
+.btn-action {
+    align-items: center; /* Центрирует элементы по вертикали */
+    font-size: 0.8em; /* Уменьшает размер шрифта кнопок */
+    padding: 5px 8px; /* Уменьшает отступы кнопок */
+}
+
+.server-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+}
+  
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+.btn-group {
+    position: absolute;
+    right: 0;
+}
+
+.btn-action:hover {
+    opacity: 0.9; /* Уменьшает прозрачность кнопок при наведении */
+}

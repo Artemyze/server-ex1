@@ -19,12 +19,12 @@
       tr
         td status
         td {{ $ctrl.server.status === "started" ? "Запущен" : "Остановлен" }}
-          a.btn.btn-default.pull-right(
-            ng-if="$ctrl.server.status === 'started'",
-            ng-click="$ctrl.stop()"
-          ) Остановить
-          a.btn.btn-default.pull-right(
-            ng-if="$ctrl.server.status === 'stoped'",
-            ng-click="$ctrl.start()"
-          ) Запустить
+          //- a.btn.btn-default.pull-right(
+          //-   ng-if="$ctrl.server.status === 'started'",
+          //-   ng-click="$ctrl.stop()"
+          //- ) Остановить
+          //- a.btn.btn-default.pull-right(
+          //-   ng-if="$ctrl.server.status === 'stoped'",
+          //-   ng-click="$ctrl.start()"
+          //- ) Запустить
 

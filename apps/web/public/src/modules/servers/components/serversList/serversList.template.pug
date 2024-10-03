@@ -6,18 +6,15 @@
           a.label.label-primary.pull-right(
             ui-sref="servers.create",
             ui-sref-active="active"
-          ) +
+          ) *
           a.label.label-primary.pull-right(
             ng-click="$ctrl.addTasks()",
             style="margin-right: 10px"
-          ) *
+          ) +
       .panel-body
         .list-group
-          button.list-group-item(
-            ng-repeat="server in $ctrl.servers",
-            ui-sref-active="active",
-            ui-sref="servers.view({id:server._id})"
-          )
-            span {{ server.name }}
+          // Перечисляем сервера с кнопками
+          div.list-group-item(ng-repeat="server in $ctrl.servers", ui-sref-active="active", ui-sref="servers.view({id:server._id})")
+            server-item(server="server")
   .col-md-9
     ui-view

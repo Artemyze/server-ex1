@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const serverSchema = new mongoose.Schema({
   name: {
@@ -24,7 +24,7 @@ const serverSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    default: 'stoped',
+    default: "stoped",
   },
 });
 

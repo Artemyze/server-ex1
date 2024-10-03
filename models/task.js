@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const taskSchema = new mongoose.Schema({
   date: String,
   name: String,
@@ -6,7 +6,6 @@ const taskSchema = new mongoose.Schema({
   completeDuration: String,
   isComplete: Boolean,
 });
-
 
 module.exports = {
   taskSchema,

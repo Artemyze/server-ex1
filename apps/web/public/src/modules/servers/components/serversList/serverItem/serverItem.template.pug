@@ -1,0 +1,19 @@
+div.btn-container
+  span.server-name {{ $ctrl.server.name }}
+  // Кнопки управления сервером
+  div.btn-group
+    button.btn.btn-action.btn-success(
+      ng-click="$ctrl.start()"
+      ng-disabled="$ctrl.server.status === 'started'"
+    )
+      i.fa.fa-play
+    button.btn.btn-action.btn-danger(
+      ng-click="$ctrl.stop()"
+      ng-disabled="$ctrl.server.status === 'stopped'"
+    )
+      i.fa.fa-stop
+    button.btn.btn-action.btn-warning(
+      ng-click="$ctrl.restart()"
+      
+    )
+      i.fa.fa-refresh

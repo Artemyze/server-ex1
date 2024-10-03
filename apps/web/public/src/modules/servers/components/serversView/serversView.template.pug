@@ -1,14 +1,16 @@
 h4 Сервер {{ $ctrl.server.name }} ({{ $ctrl.server.host }})
 
 br
-a.btn.btn-default(ng-click="$ctrl.showServerInfo()") Просмотр
+a.btn.btn-primary(ng-click="$ctrl.showServerInfo()") Просмотр
+a.btn.btn-warning(ui-sref="servers.edit({id:$ctrl.server._id})") Изменить
+br
 br
 uib-tabset
   uib-tab(heading="Инфо")
-    include tabs/_info
+    include ../tabs/_info
   uib-tab(heading="Задания", ng-if="$ctrl.server.$resolved")
-    include tabs/_tasks
+    include ../tabs/_tasks
   uib-tab(heading="Журналы", ng-if="$ctrl.server.$resolved")
-    include tabs/_journals
+    include ../tabs/_journals
   uib-tab(heading="Графики", ng-if="$ctrl.charts.$resolved")
-    include tabs/_charts
+    include ../tabs/_charts

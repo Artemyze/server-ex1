@@ -6,3 +6,4 @@ export const factoriesModule = angular.module('factories', [])
     .factory('Server', Server)
     .factory('Task', Task)
     .factory('Charts', Charts);
+

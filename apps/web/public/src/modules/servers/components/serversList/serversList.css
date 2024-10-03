@@ -1,0 +1,9 @@
+.panel {
+    border: 1px solid #ddd; /* Добавляет рамку к панелям */
+}
+
+
+.list-group-item {
+    position: relative;
+}
+
